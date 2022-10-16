@@ -10,6 +10,10 @@ public:
 	int num_of_cols = 0;
 	int num_of_rows = 0;
 	int map_size = 0;
+	vector<bool> my_map;
+	int num_of_agents = 0;
+	vector<int> start_locations;
+	vector<int> goal_locations;
 
 	Instance() = default;
 	Instance(const string& map_fname, const string& agent_fname, 
@@ -103,13 +107,9 @@ public:
 
 private:
 	  // int moves_offset[MOVE_COUNT];
-	  vector<bool> my_map;
 	  string map_fname;
 	  string agent_fname;
 	  string agent_indices;
-	  int num_of_agents = 0;
-	  vector<int> start_locations;
-	  vector<int> goal_locations;
 
 	bool loadMap();
 	void printMap() const;
