@@ -1,3 +1,7 @@
-.idea
-cmake-*
-bin
+*.idea
+cmake*
+CMake*
+Makefile
+*.csv
+paths.txt
+cbs
