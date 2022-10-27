@@ -72,7 +72,7 @@ Path SIPP::findPath(const CBSNode& node, const ConstraintTable& initial_constrai
 
 		// check if the popped node is a goal node
         if ((goal_location < 0 and // non-goal agent
-             instance.avoid_locations.count(curr->location) == 0 and // not on the prohibited locations
+             instance.avoid_locations.find(curr->location) == instance.avoid_locations.end() and // not on the prohibited locations
              curr->timestep >= reservation_table.getHoldingTime(curr->location)) or // can stay at this location without collisions
             (goal_location >= 0 and  //goal agent
              curr->location == goal_location && // arrive at the goal location
