@@ -35,4 +35,4 @@ version 1
 227	my.map	9	9	5	8	0	6	0.0
 161	my.map	9	9	3	8	0	5	0.0
 
-clear; time ./pbs -m my.map -a my.scen --outputPaths=paths.txt -s 3 -k 18
+time ./cbs -m my.map -a my.scen --outputPaths=paths.txt -k 18
