@@ -14,6 +14,7 @@ public:
 	int num_of_agents = 0;
 	vector<int> start_locations;
 	vector<int> goal_locations;
+	set<int> avoid_locations; // agents without goal locations cannot end their paths with these locations
 
 	Instance() = default;
 	Instance(const string& map_fname, const string& agent_fname, 
