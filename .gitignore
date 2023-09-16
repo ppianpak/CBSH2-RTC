@@ -5,3 +5,7 @@ Makefile
 *.csv
 paths.txt
 cbs
+*.map
+!my.map
+*.scen
+!my.scen
